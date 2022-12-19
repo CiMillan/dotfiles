@@ -1,5 +1,15 @@
 ZSH=$HOME/.oh-my-zsh
 
+#added by Cintia
+
+alias jn="jupyter notebook"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+#end
+
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ZSH_THEME="robbyrussell"
 
@@ -61,4 +71,11 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/cintiamillan/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/cintiamillan/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/cintiamillan/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/cintiamillan/google-cloud-sdk/completion.zsh.inc'; fi
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"

@@ -79,3 +79,4 @@ if [ -f '/Users/cintiamillan/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ci
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/cintiamillan/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/cintiamillan/google-cloud-sdk/completion.zsh.inc'; fi
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
